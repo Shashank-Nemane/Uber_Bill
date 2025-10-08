@@ -48,7 +48,6 @@ Build:
 
 CODE:
 
-
 #include<stdio.h>
 int main()
 {
@@ -85,7 +84,7 @@ int main()
     break;
     case 4:base=200;
     break;
-    default:printf("Invalid choice");
+   
     }
     
 
@@ -93,6 +92,38 @@ int main()
     //Now the visual of the bill would be coded
 
 
+
+  
+
+
+    if(option==1)
+    {
+        printf("Ride type: Auto\n");
+
+
+    }
+    else if(option==2)
+    {
+         printf("Ride type: Cab\n");
+
+    }
+      else if(option==3)
+    {
+         printf("Ride type: XL Cab\n");
+
+
+    }
+      else if(option==4)
+    
+    { 
+         printf("Ride type: Premium comfort\n");
+    }
+
+      
+      
+   if(option==1 ||option==2 ||option==3 ||option==4 ) 
+
+    {  
     printf("================================================");
     printf("\n                    UBER                        \n");
     printf("================================================\n\n\n");
@@ -101,38 +132,22 @@ int main()
     printf("Phone no. %ld\n",phone);
     printf("Distance travelled =  %.2f\n",km);
     printf("Ride start time =  %.2f\n",time);
-    if(time>=20 || time<=6)
+      if(time>=20 || time<=6)
     {
         printf("Night time surcharge added\n");
     }
-
-
-    if(option==1)
-    {
-        printf("Ride type: Auto\n");
-    }
-    else if(option==2)
-    {
-         printf("Ride type: Cab\n");
-    }
-      else if(option==3)
-    {
-         printf("Ride type: XL Cab\n");
-    }
-      else 
-    {
-         printf("Ride type: Premium comfort\n");
-    }
-    
-total=base+per*km;
+    total=base+per*km;
     printf("================================================");
     printf("\n\nTotal                        = %.2f Rs.\n",total);
-    printf("================================================");
-    
-    
-    
+    printf("================================================\n");
+    }  
+    else
+    {
+        printf("Invalid choice");
+    }
     return 0;
-}  
+    }  
+
 TEST:
 
 
