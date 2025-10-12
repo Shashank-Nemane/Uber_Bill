@@ -1,8 +1,6 @@
 #include<stdio.h>
 int main()
 {
-
-
     float km,time,total;
     long int phone,aadhar;
     int option,per,base;
@@ -22,6 +20,7 @@ int main()
     {
         per=10;
     }
+    type:
     printf("\nChoose your ride:\n 1)Auto 2)Cab 3)XL Cab 4)Premium comfort\n ");
     scanf(" %d",&option);
     switch(option)
@@ -34,33 +33,27 @@ int main()
     break;
     case 4:base=200;
     break;
+    default:
+    printf("Invalid Input");
+    goto type;
    
     }
-    
-
 
     //Now the visual of the bill would be coded
 
-
-
-  
-
-
-    if(option==1)
+                  if(option==1)
     {
         printf("Ride type: Auto\n");
-
-
+        
     }
     else if(option==2)
     {
          printf("Ride type: Cab\n");
-
+        
     }
       else if(option==3)
     {
          printf("Ride type: XL Cab\n");
-
 
     }
       else if(option==4)
@@ -68,12 +61,7 @@ int main()
     { 
          printf("Ride type: Premium comfort\n");
     }
-
-      
-      
-   if(option==1 ||option==2 ||option==3 ||option==4 ) 
-
-    {  
+     
     printf("================================================");
     printf("\n                    UBER                        \n");
     printf("================================================\n\n\n");
@@ -90,10 +78,7 @@ int main()
     printf("================================================");
     printf("\n\nTotal                        = %.2f Rs.\n",total);
     printf("================================================\n");
-    }  
-    else
-    {
-        printf("Invalid choice");
-    }
+     
+   
     return 0;
     }  
