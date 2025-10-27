@@ -10,7 +10,7 @@ int main()
     scanf(" %ld",&phone);
     printf("\nEnter distance from pickup and drop: ");
     scanf(" %f",&km);
-    printf("\nEnter current time in (24Hr clock) : ");
+    printf("\nEnter current time in (24Hr clock only enter hours not minutes) : ");
     scanf(" %f",&time);
     if(time>=20 || time<=6)
     {
