@@ -51,7 +51,6 @@ CODE:
 #include<stdio.h>
 int main()
 {
-
     float km,time,total;
     long int phone,aadhar;
     int option,per,base;
@@ -61,7 +60,7 @@ int main()
     scanf(" %ld",&phone);
     printf("\nEnter distance from pickup and drop: ");
     scanf(" %f",&km);
-    printf("\nEnter current time in (24Hr clock) : ");
+    printf("\nEnter current time in (24Hr clock only enter hours not minutes) : ");
     scanf(" %f",&time);
     if(time>=20 || time<=6)
     {
@@ -87,33 +86,31 @@ int main()
     default:
     printf("Invalid Input");
     goto type;
-   
-    }
-              //Now the visual of the bill would be coded
+      }
+  
 
-              if(option==1)
+  }
+           //Now the visual of the bill would be coded
+          if(option==1)
     {
         printf("Ride type: Auto\n");
-
     }
     else if(option==2)
     {
          printf("Ride type: Cab\n");
-
     }
       else if(option==3)
     {
          printf("Ride type: XL Cab\n");
 
-    }
+   }
       else if(option==4)
     
-    { 
-         printf("Ride type: Premium comfort\n");
-    }
-   
-    printf("================================================");
-    printf("\n                    UBER                        \n");
+  { 
+    printf("Ride type: Premium comfort\n");
+   }
+   printf("================================================");
+   printf("\n                    UBER                        \n");
     printf("================================================\n\n\n");
     printf("Here's your receipt for your ride.\n Hope you enjoyed the ride with us\n");
     printf("\n\n\n\n");
@@ -130,9 +127,13 @@ int main()
     printf("================================================\n");
      
    
-    return 0;
+   return 0;
     }  
 
+
+
+
+   
 
 TEST:
 
